@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate search page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./candidate.css">
+
+</head>
+<body>
+    <div class="candidate_page_container">
+        <h1 style="padding: 1rem;">Candidate List</h1>
+        <div class="search_bar">
+            <input id="myInput" type="text" placeholder="search" onkeyup="search1()" >
+            <select name="searchType" id="searchType" >
+                  <option value="name">Name</option>
+                  <option value="experience">Experience</option>
+                  <option value="job_role">Job Role</option>
+                  <option value="location">Location</option>
+              </select>
+        </div>
+        <table style="width: 80%; height: 10rem;" id="myTable">
+            <thead>
+                <tr>
+                    <th>Name</td>
+                    <th>Experience</th>
+                    <th>Job role</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>alok</td>
+                    <td>1+</td>
+                    <td>MERN Stack</td>
+                    <td>Kolkata, India</td>
+                </tr>
+                <tr>
+                    <td>paul</td>
+                    <td>1+</td>
+                    <td>MERN Stack</td>
+                    <td>Kolkata, India</td>
+                </tr>
+                <tr>
+                    <td>study</td>
+                    <td>10+</td>
+                    <td>Graphics Designer</td>
+                    <td>Kolkata, India</td>
+                </tr>
+                <tr>
+                    <td>monk</td>
+                    <td>10+</td>
+                    <td>Java Full Stack</td>
+                    <td>Kolkata, India</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./candidate.js"></script>
+</body>
+</html>
