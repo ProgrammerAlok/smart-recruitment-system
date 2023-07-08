@@ -193,7 +193,8 @@ input {
     }
     .signup__name input {
         gap: 0px;
-        width: ;
+        margin-left: -13px;
+        margin-right: 8px;
     }
 }
 
