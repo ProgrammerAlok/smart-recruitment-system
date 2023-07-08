@@ -148,7 +148,7 @@ input {
 .signup__name{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 12px;
+    margin-left: 1.5rem;
 }
 
 .signup__name input{
@@ -186,13 +186,14 @@ input {
     .signup__name{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         justify-content: center;
         align-items: center;
         gap: .7rem;
     }
     .signup__name input {
         gap: 0px;
+        width: ;
     }
 }
 
