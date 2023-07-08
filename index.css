@@ -81,7 +81,7 @@ body{
 
 .btn:hover{
     background: var(--color-bg);
-    border: transparent;
+    border: 2px solid transparent;
 }
 
 .banner_section{

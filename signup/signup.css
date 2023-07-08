@@ -148,11 +148,51 @@ input {
 .signup__name{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 12px;
 }
 
 .signup__name input{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 10rem;
     gap: 20px;
+    width: 90%;
 }
+
+
+
+/* ------------- for large screen ---------- */
+@media screen and (max-width: 1024px) {
+    
+}
+/* ------------- for medium screen  ---------- */
+@media screen and (max-width: 800px) {     
+    .signup_box2 {
+        display: none;
+    }
+    .signup_box1 {
+        max-width: var(--container-width-md);
+        box-shadow: 15px 15px 10px var(--color-bg-variant), -15px -15px 10px var(--color-bg-variant), -15px 15px 10px var(--color-bg-variant), 15px -15px 10px var(--color-bg-variant);
+    }
+}
+/* ------------- for small screen ---------- */
+@media screen and (max-width: 450px) {
+    .signup_box1 {
+        max-width: var(--container-width-sm);
+    }
+    .signup_box1 input {
+        max-width: var(--container-width-sm);
+    }
+    .signin_btn {
+        max-width: 80%;
+    }
+    .signup__name{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        gap: .7rem;
+    }
+    .signup__name input {
+        gap: 0px;
+    }
+}
+

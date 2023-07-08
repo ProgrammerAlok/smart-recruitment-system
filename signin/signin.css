@@ -143,3 +143,30 @@ input {
     align-items: center;
     margin-top: 1rem;
 }
+
+
+/* ------------- for large screen ---------- */
+@media screen and (max-width: 1024px) {
+    
+}
+/* ------------- for medium screen  ---------- */
+@media screen and (max-width: 800px) {     
+    .box2{
+        display: none;
+    }
+    .box1{
+        box-shadow: 15px 15px 10px var(--color-bg-variant), -15px -15px 10px var(--color-bg-variant), -15px 15px 10px var(--color-bg-variant), 15px -15px 10px var(--color-bg-variant);
+    }
+}
+/* ------------- for small screen ---------- */
+@media screen and (max-width: 450px) {
+    .box1{
+        max-width: var(--container-width-sm);
+    }
+    .box1 input{
+        max-width: var(--container-width-sm);
+    }
+    .box1 .signin_btn{
+        max-width: 80%;
+    }
+}
